@@ -5,11 +5,14 @@ import "strconv"
 func Fizzbuzz(number string) string {
 	x, _ := strconv.Atoi(number)
 
-	if x%3 == 0 {
+	if x%3 == 0 && x%5 == 0 {
+		return "Fizzbuzz"
+	}
+	if x%3 == 0{
 		return "Fizz"
 	}
 
-	if number == "5" {
+	if x%5 == 0 {
 		return "Buzz"
 	}
 
