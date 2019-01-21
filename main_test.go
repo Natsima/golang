@@ -40,3 +40,9 @@ func Test_6_should_be_Fizz(t *testing.T) {
 		t.Error("6 shoould be Fizz but got", result)
 	}
 }
+func Test_15_should_be_Fizzbuzz(t *testing.T) {
+	result := Fizzbuzz("15")
+	if result != "Fizzbuzz" {
+		t.Error("15 shoould be Fizzbuzz but got", result)
+	}
+}
